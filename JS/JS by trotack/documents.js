@@ -2,6 +2,11 @@ http-response ^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refres
 
 ^https:\/\/license\.pdfexpert\.com\/api\/.*\/(?:documents|pdfexpert6)\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Pdfexpert.vip.js,script-update-interval=0
 
+
+#document
+^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url 
+
+
 var obj= {
   "originalTransactionId" : "20000625420102",
   "subscriptionState" : "trial",
